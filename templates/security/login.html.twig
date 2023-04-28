@@ -1,0 +1,21 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SecurityController!{% endblock %}
+
+{% block body %}
+    <h2>connecter vous</h2>
+
+    <form action="{{ path('app_login') }}" method="post">
+        <div class="form-group">
+            <input type="text" name="_username" id="">
+        </div>
+        <div class="form-group">
+            <input type="password" name="_password" id="">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">connecter</button>
+        </div>
+    </form>
+
+{% endblock %}
